@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-kanji: 'Noto Sans JP', sans-serif;
+
+  --color-obsidian: #05070B;
+  --color-midnight: #080E1A;
+  --color-surface: #101827;
+  --color-electric: #00AFFF;
+  --color-cyan: #53E8FF;
+  --color-indigo: #293D8F;
+  --color-white: #F4F8FF;
+  --color-silver: #B9C8DD;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #05070B;
+  color: #F4F8FF;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: #05070B;
+  color: #F4F8FF;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-kanji {
+  font-family: var(--font-kanji);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05070B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #101827;
+  border-radius: 3px;
+  border: 1px solid rgba(83, 232, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00AFFF;
+}
+
+/* Subtle Cursed Energy Glows */
+.glow-cyan {
+  text-shadow: 0 0 20px rgba(83, 232, 255, 0.6), 0 0 40px rgba(0, 175, 255, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(0, 175, 255, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 40px -5px rgba(186, 85, 211, 0.5), 0 0 20px rgba(0, 175, 255, 0.4);
+}
+
+.glow-red {
+  box-shadow: 0 0 35px -5px rgba(255, 59, 48, 0.5);
+}
+
+/* Infinity Shimmer Animation */
+@keyframes infinityPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
+.animate-infinity-pulse {
+  animation: infinityPulse 4s ease-in-out infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
