@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+.cursor/
+.codex/
+.gemini/
+.agents/
+.impeccable/*.local.json
