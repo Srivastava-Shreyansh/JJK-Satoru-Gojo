@@ -100,7 +100,7 @@ export const TributeSection: React.FC = () => {
             SATORU GOJO DIGITAL TRIBUTE · 1989 — FOREVER
           </div>
           <div>
-            Non-commercial fan tribute to Jujutsu Kaisen by Gege Akutami / Shueisha.
+            Non-commercial fan tribute to Jujutsu Kaisen by SENSEI_SS &hearts;
           </div>
         </div>
       </div>
