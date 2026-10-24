@@ -33,12 +33,29 @@ Designed with a focus on **modern UI/UX, visual storytelling, and an immersive b
 - 🎯 **UI/UX Focus** — A deliberate approach to visual hierarchy, presentation, and user engagement.
 - 🌐 **Live Deployment** — Accessible online through Vercel.
 
-## 🛠️ Tech Stack
+## 🛠️ Architecture & Creative Tech Stack
 
-The project is built using modern frontend technologies. Check the repository for the complete implementation details.
+This project uses an Awwwards-standard creative development stack engineered for 60–120 FPS physics rendering, fluid typography, and GPU-driven visual effects:
 
-- **Frontend:** Refer to repository source files
-- **Deployment:** Vercel
+### ⚡ Core & Runtime
+* **Framework:** [Next.js 15+](https://nextjs.org/) (App Router, React 19, TypeScript)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) with custom fluid typography scales and CSS variables
+* **Deployment & CI/CD:** [Vercel](https://vercel.com/) with automated preview branches
+
+### 🌀 Motion, Physics & Smooth Scroll
+* **Smooth Inertial Scrolling:** [Lenis](https://github.com/darkroomengineering/lenis) (synced directly to the GSAP render ticker)
+* **Timeline Orchestration:** [GSAP 3](https://greensock.com/gsap/) (`ScrollTrigger`, `CustomEase`, `Flip`)
+* **Kinetic Text Reveals:** [SplitType](https://github.com/lukePeavey/SplitType) for character-level stagger reveals
+* **UI Transitions:** [Framer Motion](https://www.framer.com/motion/) for reactive micro-interactions
+
+### 👁️ 3D Canvas, Shaders & Post-Processing
+* **3D Scene Graph:** [Three.js](https://threejs.org/) via [React Three Fiber](https://r3f.docs.pmnd.rs/) (`@react-three/fiber`)
+* **Helpers & Shaders:** [`@react-three/drei`](https://github.com/pmndrs/drei) + raw GLSL fragment/vertex shaders for spatial refraction
+* **Post-Processing FX:** [`@react-three/postprocessing`](https://github.com/pmndrs/react-postprocessing) (Dynamic Bloom, Chromatic Aberration, Grain)
+
+### 🔊 Audio & Utilities
+* **Spatial Audio Engine:** [Howler.js](https://howlerjs.com/) for interactive SFX and bass feedback
+* **Icons & Assets:** Custom SVG matrices and [Lucide React](https://lucide.dev/)
 
 ## 🚀 Explore the Project
 
